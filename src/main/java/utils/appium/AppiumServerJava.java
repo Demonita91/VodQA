@@ -19,8 +19,8 @@ public final class AppiumServerJava {
                 new AppiumServiceBuilder()
                         .withIPAddress(url)
                         .usingPort(appiumServerPort)
-                        //.withAppiumJS(new File(appiumJsRunner))
-                        //.usingDriverExecutable(new File(pathName))
+                        .withAppiumJS(new File(appiumJsRunner))
+                        .usingDriverExecutable(new File(pathName))
                         .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
                         .withArgument(GeneralServerFlag.LOG_LEVEL, "error"));
         service.start();

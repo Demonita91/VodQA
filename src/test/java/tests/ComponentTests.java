@@ -7,10 +7,12 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ComponentTests extends BaseTest {
+
+    //com.android.permissioncontroller:id/continue_button
    
     @Parameters(value={"deviceName", "platform"})
     @BeforeClass
-    public void setupDeviceParameters (@Optional("Pixel_3a_API_30_x86") String deviceName, @Optional("Android") String platform) {
+    public void setupDeviceParameters (@Optional("Pixel_3_API_306") String deviceName, @Optional("Android") String platform) {
         setCustomCapabilities(deviceName, platform);
     }
     
